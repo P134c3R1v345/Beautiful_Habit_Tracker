@@ -42,7 +42,23 @@ export default function AuthForm({ onAuthSuccess }: AuthFormProps) {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4 relative">
+      {/* Bolt.new Badge */}
+      <div className="fixed top-4 right-4 z-50">
+        <a 
+          href="https://bolt.new" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="block transition-transform hover:scale-105"
+        >
+          <img 
+            src="/black_circle_360x360.png" 
+            alt="Built with Bolt.new" 
+            className="w-12 h-12 sm:w-14 sm:h-14 drop-shadow-lg"
+          />
+        </a>
+      </div>
+
       <div className="bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-xl border border-white/50 w-full max-w-md">
         <div className="text-center mb-8">
           <div className="p-3 bg-gradient-to-br from-green-400 to-blue-500 rounded-2xl shadow-lg w-16 h-16 mx-auto mb-4 flex items-center justify-center">

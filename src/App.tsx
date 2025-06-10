@@ -97,15 +97,19 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
-      {/* Built with Bolt Badge */}
+      {/* Bolt.new Badge */}
       <div className="fixed top-4 right-4 z-50">
         <a 
           href="https://bolt.new" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-full shadow-md text-xs font-medium text-gray-700 hover:bg-white transition-colors border border-gray-200"
+          className="block transition-transform hover:scale-105"
         >
-          Built with ⚡ Bolt.new
+          <img 
+            src="/black_circle_360x360.png" 
+            alt="Built with Bolt.new" 
+            className="w-12 h-12 sm:w-14 sm:h-14 drop-shadow-lg"
+          />
         </a>
       </div>
 
