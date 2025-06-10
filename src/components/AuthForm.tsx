@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Lock, User, Eye, EyeOff } from 'lucide-react';
+import { Mail, Lock, Eye, EyeOff } from 'lucide-react';
 import { supabase } from '../lib/supabase';
 
 interface AuthFormProps {
@@ -61,8 +61,12 @@ export default function AuthForm({ onAuthSuccess }: AuthFormProps) {
 
       <div className="bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-xl border border-white/50 w-full max-w-md">
         <div className="text-center mb-8">
-          <div className="p-3 bg-gradient-to-br from-green-400 to-blue-500 rounded-2xl shadow-lg w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-            <User className="w-8 h-8 text-white" />
+          <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+            <img 
+              src="/Habitlogo.png" 
+              alt="HabitFlow Logo" 
+              className="w-16 h-16 object-contain"
+            />
           </div>
           <h1 className="text-2xl font-bold bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">
             Welcome to HabitFlow
